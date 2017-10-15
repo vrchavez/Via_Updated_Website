@@ -17,6 +17,8 @@ function currentYPosition() {
     return 0;
 }
 
+//*THIS WILL BE DIFFERENT BUT DO NOTHING*//
+
 //**Returns distance between current div and next div.**//
 function elmYPosition(eID) {
     var elm = document.getElementById(eID);
