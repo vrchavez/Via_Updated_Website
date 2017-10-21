@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViaRepairBTE", "ViaRepairBTE\ViaRepairBTE.csproj", "{02F5A457-3343-4332-BF4A-52F956CEC535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{63DDB0A0-DBDC-4EFA-A106-4DC90E1F5BB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{A0CFBC0F-D39E-44AA-A2A9-F4C92227F1C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02F5A457-3343-4332-BF4A-52F956CEC535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F5A457-3343-4332-BF4A-52F956CEC535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F5A457-3343-4332-BF4A-52F956CEC535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F5A457-3343-4332-BF4A-52F956CEC535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63DDB0A0-DBDC-4EFA-A106-4DC90E1F5BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63DDB0A0-DBDC-4EFA-A106-4DC90E1F5BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63DDB0A0-DBDC-4EFA-A106-4DC90E1F5BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63DDB0A0-DBDC-4EFA-A106-4DC90E1F5BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CFBC0F-D39E-44AA-A2A9-F4C92227F1C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CFBC0F-D39E-44AA-A2A9-F4C92227F1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CFBC0F-D39E-44AA-A2A9-F4C92227F1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CFBC0F-D39E-44AA-A2A9-F4C92227F1C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

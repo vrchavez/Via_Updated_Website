@@ -1,21 +1,21 @@
 @font-face {
     font-family: Bebas2;
-    src: url('BebasNeue Bold.otf')
+    src: url('/Fonts/BebasNeue Bold.otf')
 }
 
 @font-face {
     font-family: Lato;
-    src: url('Lato.otf');
+    src: url('/Fonts/Lato.otf');
 }
 
 @font-face {
     font-family: Din;
-    src: url('din-condensed.otf');
+    src: url('/Fonts/din-condensed.otf');
 }
 
 @font-face {
     font-family: Bebas;
-    src: url('bebas-neue-light.woff2');
+    src: url('/Fonts/bebas-neue-light.woff2');
 }
 
 body.swal2-shown {

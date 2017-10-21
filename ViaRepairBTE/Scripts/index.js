@@ -1,4 +1,4 @@
-//--------------------------------FROM HERE TO END OF SECTION, USED FOR SMOOTHSCROLL-----------------------------
+﻿//--------------------------------FROM HERE TO END OF SECTION, USED FOR SMOOTHSCROLL-----------------------------
 
 //**Returns total pixels scrolled by user (Current position of page).*//
 function currentYPosition() {
@@ -16,8 +16,6 @@ function currentYPosition() {
     }
     return 0;
 }
-
-//*THIS WILL BE DIFFERENT BUT DO NOTHING*//
 
 //**Returns distance between current div and next div.**//
 function elmYPosition(eID) {
@@ -250,7 +248,7 @@ function scrollReader() {
                 } else if ((parseInt(st) <= (tDiv - (tDiv * .12))) && (parseInt(st) >= (vDiv - 5))) {
                     event.preventDefault();
                     smoothScroll("SP");
-                } else if (parseInt(st) >= (tDiv-(tDiv * .12))) {
+                } else if (parseInt(st) >= (tDiv - (tDiv * .12))) {
                     event.preventDefault();
                     smoothScroll("VP");
                 }
