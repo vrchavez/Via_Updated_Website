@@ -106,10 +106,11 @@
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\index.js" />
-    <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\repair.js" />
     <Content Include="Scripts\sweetAlert2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\UnityConfig.cs" />
@@ -129,6 +130,8 @@
     <Content Include="Fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Fonts\Lato.otf" />
+    <None Include="Properties\PublishProfiles\viacellrepair - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ViaRepair - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\ViaRepairFTE - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

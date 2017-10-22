@@ -1,22 +1,22 @@
 ﻿/*CLEAN CLEAN CLEAN*/
 @font-face {
     font-family: Bebas;
-    src: url('/Fonts/bebas-neue-light.woff2');
+    src: url('../Fonts/bebas-neue-light.woff2');
 }
 
 @font-face {
     font-family: Bebas2;
-    src: url('/Fonts/BebasNeue Bold.otf')
+    src: url('../Fonts/BebasNeue Bold.otf') format("opentype");
 }
 
 @font-face {
     font-family: Din;
-    src: url('/Fonts/din-condensed.otf');
+    src: url('../Fonts/din-condensed.otf') format("opentype");
 }
 
 @font-face {
     font-family: Lato;
-    src: url('/Fonts/Lato.otf');
+    src: url('../Fonts/Lato.otf') format("opentype");
 }
 
 /*Desktop version website height and width*/
