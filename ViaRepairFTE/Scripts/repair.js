@@ -71,8 +71,27 @@ function priceContainerCheck(e) {
         var repairInfo = getRepairInfo();
         var isFormValid = validateForm(repairInfo);
         if (isFormValid == true) {
-            //sendToSpree();
             completeLastPage(repairInfo);
+            var dateNew = repairInfo.time.replace('-', '');
+            var notesNew;
+            //This makes sure "undefined" does not get sent to backend
+            if (typeof repairInfo.notes == "undefined") {
+                notesNew = '';
+            } else {
+                notesNew = repairInfo.notes;
+            }
+            var appointmentData = {
+                name: repairInfo.name,
+                phone: repairInfo.phoneNum,
+                email: repairInfo.email,
+                address: repairInfo.address,
+                date: dateNew,
+                notes: notesNew,
+                device: repairInfo.phoneType,
+                repair: repairInfo.repair,
+                total: repairInfo.total
+            }
+            sendToSpree(appointmentData);
         }
     } else {
         if (issues.length > 1) {
@@ -263,14 +282,14 @@ function sendToSpree(data) {
     var newObj = param(data),
         xhr = new XMLHttpRequest();
 
-    xhr.open('POST', '//formspree.io/vrchavez05@gmail.com');
+    xhr.open('POST', 'http://repairthere.azurewebsites.net/api/appointment');
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onload = function () {
-        if (xhr.status === 200 && xhr.responseText !== newObj) {
-            alert('Something went wrong.  Name is now ' + xhr.responseText);
-        }
-        else if (xhr.status !== 200) {
-            alert('Request failed.  Returned status of ' + xhr.status);
+        if (xhr.status !== 200) {
+            swal({
+                title: '<i>Appointment was not made. Please try again later.</i>',
+                showCloseButton: true,
+            });
         }
     };
     xhr.send(newObj);
